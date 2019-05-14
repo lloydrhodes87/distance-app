@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+.header {
+  margin-top: 2rem;
+}
+
+ion-icon {
+  background-color: white;
+  font-size: 2rem;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.main {
+  display: flex;
+  margin-top: -3rem;
+  justify-content: center;
+}

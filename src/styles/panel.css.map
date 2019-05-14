@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,UAAU,CAAC;EACT,MAAM,EAAE,GAAG,CAAC,KAAK,CAHZ,IAAI;EAIT,OAAO,EAAE,IAAI;EACb,gBAAgB,EALX,IAAI;EAMT,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,SAAS;EAEjB,aAAa,EAAE,IAAI;CAOpB;;AAdD,AAQE,UARQ,CAQR,EAAE,CAAC;EACD,gBAAgB,EAXb,IAAI;CAYR;;AAVH,AAWE,UAXQ,CAWR,CAAC,CAAC;EACA,gBAAgB,EAdb,IAAI;CAeR",
+    "sources": [
+        "panel.scss"
+    ],
+    "names": [],
+    "file": "panel.css"
+}

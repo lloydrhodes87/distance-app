@@ -1,0 +1,58 @@
+.history {
+  padding: 2rem;
+  margin: 2rem;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.history .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.history .container .origins {
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.history .container .destinations {
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.history h2 {
+  text-align: center;
+  background-color: white;
+}
+
+.history h3 {
+  background-color: white;
+  font-size: 1rem;
+}
+
+.history p {
+  background-color: white;
+}
+
+.history li {
+  list-style: none;
+}
+
+.history li p {
+  position: relative;
+  left: -20px;
+}
+
+.history button {
+  border: 1px solid grey;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.history div {
+  background-color: white;
+}
+/*# sourceMappingURL=history.css.map */

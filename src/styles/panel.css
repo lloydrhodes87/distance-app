@@ -1,0 +1,17 @@
+.dataPanel {
+  border: 2px solid #fff;
+  padding: 2rem;
+  background-color: #fff;
+  width: 80%;
+  margin: 4rem 2rem;
+  border-radius: 10px;
+}
+
+.dataPanel h2 {
+  background-color: #fff;
+}
+
+.dataPanel p {
+  background-color: #fff;
+}
+/*# sourceMappingURL=panel.css.map */
