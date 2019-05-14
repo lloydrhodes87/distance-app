@@ -35,12 +35,14 @@ class App extends Component {
         />
 
         <div className="main">
+          {data.distance !== '' && (
+            <Data data={data} mode={mode} className="data" />
+          )}
           <History
             data={data}
             handleReselectDestination={this.handleReselectDestination}
             handleReselectOrigin={this.handleReselectOrigin}
           />
-          {data.distance !== '' && <Data data={data} mode={mode} />}
         </div>
       </div>
     );

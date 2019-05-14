@@ -60,10 +60,28 @@ li {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
   .container {
     display: flex;
     flex-direction: column;
+  }
+
+  .link {
+    padding: 10px 0;
+  }
+
+  #root > div > div.main > div.history {
+    margin-top: 2rem;
+    padding-top: 0;
+  }
+
+  #root > div > div.main > div:nth-child(1) > div {
+    padding: 0;
+    margin-bottom: 0;
   }
 
   #root > div > div.main > div > div > div > div.origins,
