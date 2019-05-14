@@ -30,3 +30,16 @@ li {
   margin-top: -3rem;
   justify-content: center;
 }
+
+.link {
+  border: none !important;
+  color: black;
+  font-size: 1rem;
+  margin: 0 auto;
+  position: relative;
+  left: -1rem;
+}
+
+.link:hover {
+  transform: scale(1.05) !important;
+}

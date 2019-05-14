@@ -27,9 +27,12 @@ class History extends Component {
                   {recentOrigins.map(location => {
                     return (
                       <li key={location}>
-                        <p onClick={() => this.handleReselectOrigin(location)}>
+                        <button
+                          onClick={() => this.handleReselectOrigin(location)}
+                          className="link"
+                        >
                           {location}
-                        </p>
+                        </button>
                       </li>
                     );
                   })}
@@ -43,13 +46,14 @@ class History extends Component {
                   {recentDestinations.map(location => {
                     return (
                       <li key={location}>
-                        <p
+                        <button
+                          className="link"
                           onClick={() =>
                             this.handleReselectDestination(location)
                           }
                         >
                           {location}
-                        </p>
+                        </button>
                       </li>
                     );
                   })}
