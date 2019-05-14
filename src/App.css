@@ -43,3 +43,31 @@ li {
 .link:hover {
   transform: scale(1.05) !important;
 }
+@media (max-width: 700px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+
+  .form > button {
+    margin: 20px 0 15px 0;
+  }
+
+  .form > label {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #root > div > div.main > div > div > div > div.origins,
+  #root > div > div.main > div > div > div > div.destinations {
+    margin: 1rem;
+  }
+}

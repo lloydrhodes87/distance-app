@@ -13,7 +13,7 @@ class Travel extends Component {
 
     return (
       <div className="search">
-        <form>
+        <form className="form">
           <label htmlFor="origin">Origin</label>
           <input
             onChange={this.handleChange}
