@@ -5,6 +5,7 @@ import Travel from './components/Travel';
 import Data from './components/Data';
 import TravelModes from './components/TravelModes';
 import History from './components/History';
+import Err from './components/Err';
 
 class App extends Component {
   state = {
@@ -17,13 +18,15 @@ class App extends Component {
     },
     mode: 'driving',
     oldOrigin: '',
-    oldDestination: ''
+    oldDestination: '',
+    error: false
   };
   render() {
-    const { data, mode, oldDestination, oldOrigin } = this.state;
+    const { data, mode, oldDestination, oldOrigin, error } = this.state;
 
     return (
       <div className="App">
+        {error && <Err />}
         <Header />
         <TravelModes handleEmitTravelMode={this.handleEmitTravelMode} />
         <p>You've selected: {mode[0].toUpperCase() + mode.substring(1)}</p>
@@ -32,6 +35,7 @@ class App extends Component {
           mode={mode}
           oldDestination={oldOrigin}
           oldOrigin={oldDestination}
+          handleError={this.handleError}
         />
 
         <div className="main">
@@ -72,6 +76,11 @@ class App extends Component {
   handleReselectDestination = destination => {
     this.setState({
       oldDestination: destination
+    });
+  };
+  handleError = err => {
+    this.setState({
+      err: true
     });
   };
 }

@@ -78,15 +78,16 @@ class Travel extends Component {
         getDataFromTravel(data);
         this.setState(
           () => ({
-            data
+            data,
+            err: false
           }),
           () => {
-            getDataFromTravel(data);
+            getDataFromTravel(data, this.state.err);
           }
         );
       })
       .catch(err => {
-        console.log(err);
+        this.props.handleError(err);
       });
   };
 }
